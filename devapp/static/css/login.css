@@ -62,3 +62,14 @@ a{
     color: black;
 
 }
+
+.alert-alert-danger-alter-dismissable-fade-show{
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+.alert-alert-success-alter-dismissable-fade-show{
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
