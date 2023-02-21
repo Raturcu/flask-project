@@ -41,3 +41,24 @@ body{
 h5{
     font-size: 30px;
 }
+h3{
+    padding-bottom: 60px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+
+}
+a{
+    display: grid;
+    height: 45px;
+    width: 100%;
+    background-color: aliceblue;
+    position: absolute;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+
+}

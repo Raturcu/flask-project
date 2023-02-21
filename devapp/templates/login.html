@@ -9,9 +9,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
+        <h3>RAT-NET - Internet Cafe</h3>
         <div class="container">
             <div class="row-main">
                 <div class="main-login main center">
+                    
                     <h5>Login</h5>
                     <form method="post" autocomplete="off">
                         <div class="form-group">
@@ -35,10 +37,14 @@
                         <div class="form-group">
                             <p></p>
                             <input type="submit" value="Login" class="form-control-btn-btn-primary " name="" >
-                            <p style="padding:5px;">
-                            
-                            
                         </div>
+                        <div class="form-group">
+                            <p></p>
+                            <a href="{{ url_for('auth.register') }}" class="form-control-btn btn-primary">Register</a>
+                            <p style="padding:5px;">
+                                
+                        </div>
+                    
                     </form>
                 </div>
             </div>

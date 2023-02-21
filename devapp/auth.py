@@ -7,9 +7,17 @@ from . import db
 
 auth = Blueprint('auth', __name__)
 
-@auth.route('/')
+@auth.route('/',methods=['GET','POST'])
 def home():
     return render_template('login.html')
+
+def register_login():
+    if request.method()=='GET': 
+        
+        return render_template('register.html')
+        
+    
+    
 
 
 
@@ -36,6 +44,4 @@ def register():
             flash('Account Created!',category='success')
             return redirect(url_for("auth.home"))
             
-            
-   
     return render_template('register.html')
