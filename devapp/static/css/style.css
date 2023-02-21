@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    background: url(/static/images/1.jpg);
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    font-size: 20px;
+    color: aliceblue;
+
+}
+.form-control{
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+
+}
+
+.form-control-btn-btn-primary{
+    height: 45px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    font-family: montserrat;
+    font-size: 20px;
+}
+h5{
+    font-size: 23px;
+}
+.btn-btn-dark{
+    color: white;
+
+}
+.alert-alert-danger-alter-dismissable-fade-show{
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+.alert-alert-success-alter-dismissable-fade-show{
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}

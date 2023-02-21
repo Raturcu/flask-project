@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Register</title>
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="row main">
+                <div class="main-login main center">
+                    <h5>Register New User or login existing acoount</h5>
+                    <form method="post" autocomplete="off">
+                        <div class="form-group">
+                            <label for="name" class="cols-sm-2 control-label">Your Username</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa " aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="username" id="username" placeholder="Enter your Username"/>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="cols-sm-2 control-label">Your Email</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-enevelope fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="email" id="email" placeholder="Enter your email"/>    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password1" class="cols-sm-2 control-label">Password</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                    <input type="password" class="form-control" name="password1" id="password1" placeholder="Enter your Passsword" required>    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password2" class="cols-sm-2 control-label">Confirm Password</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                    <input type="password" class="form-control" name="password2" id="password2" required placeholder="Confirm your Password">    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <p></p>
+                            <input type="submit" value="Register" class="form-control-btn-btn-primary " name="" >
+                            <p style="padding:5px;">
+                            <a href="#" class="btn-btn-dark">Login</a></p>
+                            
+                            <!--p></p>
+                            <input type="submit" value="Login" class="form-control-btn-btn-primary " name="" -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script-->  
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    {% if category == 'error' %}
+                    <div class="alert-alert-danger-alter-dismissable-fade-show">
+                    {{ message }}
+                    <!--button type="button" class="close" data-dismiss="alert">
+                        <span aria-hidden="true">&times;</span>
+                    </button-->
+                    </div>
+                    {% else %}
+                    <div class="alert-alert-success-alter-dismissable-fade-show">
+                    {{ message }}
+                    <!--button type="button" class="close" data-dismiss="alert">
+                        <span aria-hidden="true">&times;</span>
+                    </button-->
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </body>
+</html>
