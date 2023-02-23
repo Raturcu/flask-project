@@ -21,6 +21,6 @@ jobs:
         run: pip install flask Flask-SQLAlchemy flask-login
         
       - name: Run Aplication
-        working_directory: home
+        working-directory: flask-project
         shell: bash 
         run: flask run
