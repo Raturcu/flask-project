@@ -13,5 +13,6 @@ jobs:
         shell: bash
         run: python3 --version
       - name: Install requirements
+        working-directory: flask-project
         shell: bash
-        run: python3 -m pip install -r requirements.txt
+        run: pip install -r requirements.txt
