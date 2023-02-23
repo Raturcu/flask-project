@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Install python 
         shell: bash
-        run: apt install python3 python3-pip
+        run: python3 --version
