@@ -1,0 +1,17 @@
+name: Test Flask App
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  test_python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install python 
+        shell: bash
+        run: apt get install python3 python3-pip
+        
