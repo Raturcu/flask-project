@@ -18,8 +18,9 @@ jobs:
 
       - name: Install requirements
         shell: bash
-
         run: pip install flask Flask-SQLAlchemy flask-login
+        
       - name: Run Aplication
+        working_directory: home
         shell: bash 
         run: flask run
